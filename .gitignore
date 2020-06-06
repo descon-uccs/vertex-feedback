@@ -1,0 +1,13 @@
+*.docx
+*.aux
+*.blg
+*.log
+*.synctex.gz
+*.pdf
+.DS_Store
+paper.log
+paper.pdf
+paper.synctex.gz
+*.DS_Store
+*.key
+Archive/

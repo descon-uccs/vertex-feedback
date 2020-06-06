@@ -1,0 +1,247 @@
+\newcommand{\agg}{{\rm AGG}}
+\newcommand{\con}{{\rm CON}}
+\newcommand{\tr}{^{\rm T}}
+\newcommand{\uglyL}{\frac{\Kmax\bmin}{1+\kone^*\bmin}}
+\newcommand{\uglyU}{\frac{\Kmax\bmax}{1+\kone^*\bmax}}
+%\newcommand{\ugly}{\frac{\Kmax s}{1+\kone^* s }}
+%\newcommand{\uglyinv}{\frac{1+\kone^* s }{\Kmax s}}
+\newcommand{\ugly}{\beta(s,\kappa)}
+\newcommand{\uglyinv}{\beta(s,\kappa)}
+
+\newcommand{\Dinv}{D^{-1}}
+\newcommand{\sig}{\gamma}
+\newcommand{\bee}{\mathcal{B}}
+%\newcommand{\bl}{\beta_{\rm L}}
+%\newcommand{\bu}{\beta_{\rm U}}
+
+\newcommand{\fr}{f_{\rm r}}
+\newcommand{\fa}{f_{\rm a}}
+\newcommand{\lh}{\ell_{\rm h}}
+\newcommand{\lu}{\ell_{\rm u}}
+\newcommand{\lr}{c_{\rm r}}
+\newcommand{\la}{c_{\rm a}}
+\newcommand{\bh}{b_{\rm h}}
+\newcommand{\ah}{a_{\rm h}}
+\newcommand{\bu}{b_{\rm u}}
+\newcommand{\au}{a_{\rm u}}
+
+
+%\newcommand{\c}{
+\newcommand{\da}{d_{\rm a}}
+%\newcommand{\do}{d_0}
+\newcommand{\dr}{d_{\rm r}}
+
+\newcommand{\zu}{\zeta_{\rm U}}
+\newcommand{\zl}{\zeta_{\rm L}}
+\newcommand{\zU}{z_{\rm U}}
+\newcommand{\zL}{z_{\rm L}}
+\DeclareMathOperator*{\arginf}{arg\,inf}
+%\DeclareMathOperator*{\poa}{{\rm PoA}}
+\DeclareMathOperator*{\argmax}{arg\,max}
+\DeclareMathOperator*{\argmin}{arg\,min}
+\newcommand{\rU}{r_{\rm U}}
+\newcommand{\rL}{r_{\rm L}}
+\newcommand{\perv}{{\rm PI}}
+\newcommand{\tgmc}{\tmech^{\rm gmc}}
+\newcommand{\fperv}{f^{\rm perverse}}
+\newcommand{\feff}{f^{\rm efficient}}
+\newcommand{\Lnasha}{\Lnash_{\rm alt}}
+\newcommand{\dda}{\frac{\partial}{\partial\alpha}}
+
+\newcommand{\ta}{\tmech^{\rm A}}
+\newcommand{\tu}{\tmech^{\rm u}}
+\newcommand{\vs}{\vspace{-1mm}}
+\newcommand{\hs}[1][0.5]{\hspace{-#1mm}}
+\newcommand{\kA}{\kappa_{\rm A}}
+\newcommand{\ku}{\kappa_{\rm u}}
+\newcommand{\natm}{\tau^{\rm na}}
+\newcommand{\delf}{\frac{\partial \fnash}{\partial z_i}}
+\newcommand{\cee}{\mathcal{C}}
+\newcommand{\ree}{\mathcal{R}}
+\newcommand{\invss}{\left(\frac{1}{\bmin}+\frac{1}{\bmax}\right)}
+\newcommand{\invssb}{\left(\frac{\bmin+\bmax}{\bmin\bmax}\right)}
+\newcommand{\nee}{{\cal N}}
+\newcommand{\tft}{\tau^{*}}
+\newcommand{\Lsptmax}{L_{\rm max}^{\rm smc}}
+\newcommand{\Lftmin}{L_{\rm min}^{\rm ft}}
+\newcommand{\fl}{f_{\rm L}}
+\newcommand{\fu}{f_{\rm H}}
+\newcommand{\gee}{\mathcal{G}}
+\newcommand{\geep}{\mathcal{G}^p}
+\newcommand{\tgpt}{\tmech^{\rm gpt}}
+
+\newcommand{\fspt}{f^{\rm smc}}
+\newcommand{\fsmc}{f^{\rm smc}}
+\newcommand{\fft}{f^{\rm ft}}
+
+% text commands:
+\newcommand{\mctoll}{weighted marginal cost}
+\newcommand{\wmcrule}{weighted marginal cost toll rule}
+\newcommand{\Krconstraint}{fully-utilized}
+% d commands:
+\newcommand{\aij}{\ensuremath{a_{ij}}}
+\newcommand{\aik}{\ensuremath{a_{ik}}}
+\newcommand{\djk}{\ensuremath{a_{jk}}}
+\newcommand{\dkj}{\ensuremath{a_{kj}}}
+\newcommand{\dpprime}{\ensuremath{a_{pp'}}}
+\newcommand{\dpstar}{\ensuremath{a_{pp^*}}}
+\newcommand{\aione}{\ensuremath{a_{i+1}}}
+\newcommand{\ait}{\ensuremath{a_i^T}}
+\newcommand{\ai}{\ensuremath{a_i}}
+\newcommand{\aj}{\ensuremath{a_j}}
+\newcommand{\aionet}{\ensuremath{a_{i+1}^T}}
+\newcommand{\ajt}{\ensuremath{a_j^T}}
+\newcommand{\ajone}{\ensuremath{a_{j+1}}}
+\newcommand{\dkt}{\ensuremath{a_k^T}}
+\newcommand{\dkonet}{\ensuremath{a_{k+1}^T}}
+% f commands:
+\newcommand{\ftoll}{f^{\rm toll}}
+\newcommand{\fione}{\ensuremath{f_{i+1}}}
+\newcommand{\fpk}{\ensuremath{f_{k}}}
+\newcommand{\fpi}{\ensuremath{f_{i}}}
+\newcommand{\fpj}{\ensuremath{f_{j}}}
+\newcommand{\fp}[1][i]{\ensuremath{f_{p_#1}}}
+\newcommand{\fnpk}{\ensuremath{f^{\rm nf}_{k}}}
+\newcommand{\fnpi}{\ensuremath{f^{\rm nf}_{i}}}
+\newcommand{\fnpione}{\ensuremath{f^{\rm nf}_{i+1}}}
+\newcommand{\fnpj}{\ensuremath{f^{\rm nf}_{j}}}
+\newcommand{\fnp}[1][i]{\ensuremath{f_{p_{#1}}^{{\rm nf}}}}
+\newcommand{\fnash}{\ensuremath{f^{\rm nf}}}
+\newcommand{\fv}{\ensuremath{f}}
+\newcommand{\fpp}{\ensuremath{f_{p'}}}
+\newcommand{\fe}{\ensuremath{f^e}}
+\newcommand{\fhet}{\ensuremath{f^{\rm het}}}
+\newcommand{\fopt}{\ensuremath{f^{\rm opt}}}%{\rm opt}}}
+\newcommand{\NF}[1][\sdist,\bh]{\ensuremath{\mathcal{F}\left(\net,#1\right)}}
+\newcommand{\NFi}[1][\sdist,\bh]{\ensuremath{\mathcal{F}^{\rm mi}\left(\net,#1\right)}}
+% K commands:
+\newcommand{\Rp}{\ensuremath{R_p}}
+\newcommand{\Mp}{\ensuremath{M_p}}
+\newcommand{\Ri}{\ensuremath{R_i}}
+\newcommand{\Mi}{\ensuremath{M_i}}
+\newcommand{\Rj}{\ensuremath{R_j}}
+\newcommand{\Mj}{\ensuremath{M_j}}
+\newcommand{\Rk}{\ensuremath{R_k}}
+\newcommand{\Mk}{\ensuremath{M_k}}
+\newcommand{\Rpprime}{\ensuremath{R_{p'}}}
+\newcommand{\Mpprime}{\ensuremath{M_{p'}}}
+\newcommand{\Rpstar}{\ensuremath{R_{p^*}}}
+\newcommand{\Mpstar}{\ensuremath{M_{p^*}}}
+\newcommand{\Krpi}{\ensuremath{R_i}}
+\newcommand{\Krpj}{\ensuremath{R_j}}
+\newcommand{\Krpk}{\ensuremath{R_k}}
+\newcommand{\Kgpi}{\ensuremath{\Gamma_i}}
+\newcommand{\Kgpj}{\ensuremath{\Gamma_j}}
+\newcommand{\Kgpk}{\ensuremath{\Gamma_k}}
+\newcommand{\Kg}{\ensuremath{\Theta}}
+\newcommand{\vG}{v^\net}
+\newcommand{\Kmax}{M}
+\newcommand{\kone}{\kappa_1}
+\newcommand{\ktwo}{\kappa_2}
+\newcommand{\konen}{\kappa_{1,n}}
+\newcommand{\ktwon}{\kappa_{2,n}}
+% misc commands:
+\newcommand{\tspace}{\hspace{-2pt}}
+\newcommand{\Lam}{\Lambda}
+\newcommand{\net}{G}
+\newcommand{\netset}{\mathcal{\net}}
+\newcommand{\netbig}{\ensuremath{N}}
+\newcommand{\pset}{\ensuremath{\mathcal{P}}}
+\newcommand{\psetu}{\ensuremath{\pset}}
+\newcommand{\rI}{\ensuremath{I_r}}
+\newcommand{\gI}{\ensuremath{I_{\gamma}}}
+\newcommand{\rbar}{\ensuremath{\bar{r}}}
+\newcommand{\zbar}{\ensuremath{\bar{\gaminv}}}
+%\newcommand{\inst}[1][r]{instance \ensuremath{(\netbig,#1,\bh)}}
+\newcommand{\bratio}{q}%{\ensuremath{\bmin/\bmax}}
+\newcommand{\pratio}{\ensuremath{\frac{\sqrt{\bratio}}{\left(1+\sqrt{\bratio}\right)^2}}}
+\newcommand{\cost}{\ensuremath{J}}
+\newcommand{\costn}{\ensuremath{J^{\rm ne}}}
+\newcommand{\ones}{\mathbf{1}}
+\newcommand{\onest}{\mathbf{1}^{\rm T}}
+\newcommand{\zeros}{\mathbf{0}}
+\newcommand{\zerost}{\mathbf{0}^{\rm T}}
+\newcommand{\ei}{\mathbf{e}_i}
+\newcommand{\eit}{\mathbf{e}_i^T}
+\newcommand{\Pmat}{Q}
+\newcommand{\poa}{\ensuremath{{\rm PoA}}}
+\newcommand{\auxpoa}{\overbar{\poa}}
+\newcommand{\tmc}{\tmech^{\rm mc}}
+\newcommand{\ptope}{Z}
+\newcommand{\game}{G}
+\newcommand{\gamefam}{\mathcal{G}}
+\newcommand{\tmech}{T}
+\newcommand{\Lprox}{\Gamma}
+\newcommand{\Tmat}{H}
+% beta commands:
+\newcommand{\bmin}{\ensuremath{S_{\rm L}}}%\beta_{\rm L}}}
+\newcommand{\bmax}{\ensuremath{S_{\rm U}}}%\beta_{\rm U}}}
+%\newcommand{\bubar}{\ensuremath{\sdist^-}}
+\newcommand{\btbar}{\ensuremath{\sdist^+}}
+%\newcommand{\bmin}{\ensuremath{\beta_1}}
+%\newcommand{\bmax}{\ensuremath{\beta_2}}
+%\newcommand{\bh}{\ensuremath{\kappa}}%{\rm K}}}
+\newcommand{\bhbar}{\ensuremath{\bar{\mu}}}
+\newcommand{\bhbest}{\ensuremath{\bh^*}}
+\newcommand{\sdist}{s}%\tilde{\beta}}
+\newcommand{\sdistx}{\sdist_x}
+\newcommand{\sdisty}{\sdist_y}
+\newcommand{\si}{\sdist_i}
+\newcommand{\sione}{\sdist_{i+1}}
+\newcommand{\sj}{\sdist_{j}}
+\newcommand{\sjone}{\sdist_{j+1}}
+% B commands:
+\newcommand{\Sinfty}{\see}
+\newcommand{\Bnone}{\mathscr{S}_{n-1}}
+\newcommand{\Btwo}{\mathscr{S}_{2}}
+\newcommand{\Bone}{\mathscr{S}_{1}}
+\newcommand{\Bn}{\mathscr{S}_{n}}
+\newcommand{\see}{\mathscr{S}}
+% alpha commands:
+\newcommand{\abratio}{\ensuremath{\frac{\bh \beta}{\left(1 + \bh\beta \right)^2}}}
+\newcommand{\abest}{\ensuremath{\alpha^*}}
+% gamma commands:
+\newcommand{\gam}{\ensuremath{\gamma}}
+\newcommand{\zhom}{\ensuremath{z_0}}
+\newcommand{\gaminv}{\ensuremath{(1/\gam)}}
+\newcommand{\gami}{\ensuremath{\gamma_i}}
+\newcommand{\gamMin}{\ensuremath{z_{{\rm L}}}}
+\newcommand{\gamMax}{\ensuremath{z_{{\rm U}}}}
+\newcommand{\zopt}{\ensuremath{z^{{\rm opt}}}}
+% M commands:
+\newcommand{\MU}{\ensuremath{\mu_{{\rm U}}}}
+\newcommand{\ML}{\ensuremath{\mu_{{\rm L}}}}
+\newcommand{\MUk}{\ensuremath{m_{k{\rm U}}}}
+\newcommand{\MLk}{\ensuremath{m_{k{\rm L}}}}
+% L commands:
+\renewcommand{\L}{\mathcal{C}}
+\newcommand{\Lnash}{\ensuremath{\mathcal{L}^{\rm nf}}}
+\newcommand{\Lopt}{\ensuremath{\mathcal{L}^*}}%{\rm opt}}}
+%\newcommand{\Lmax}{\ensuremath{\Lnash_{\rm max}}}
+\newcommand{\Lf}{\ensuremath{L(\fv)}}
+\newcommand{\Lg}[1][\bh]{\ensuremath{L_{\bh}(#1)}}
+\newcommand{\Lr}{\ensuremath{L_{R}}}
+\newcommand{\Lrba}{\ensuremath{L(r,\beta,\bh)}}
+\newcommand{\La}{\ensuremath{L_1}}
+\newcommand{\Lb}{\ensuremath{L_2}}
+\newcommand{\Lmax}[1][\sdist,\bh]{\ensuremath{\mathcal{L}_D\left(#1\right)}}
+\newcommand{\Lmaxi}[1][\sdist,\bh]{\ensuremath{\mathcal{L}_D^{\rm mi}\left(#1\right)}}
+\newcommand{\Lft}{\mathcal{L}^{\rm ft}}
+\newcommand{\Lnf}{\mathcal{L}^{\rm nf}}
+% sigma-notation commands:
+\newcommand{\sumjneqi}{\ensuremath{\sum\limits_{j\neq i}^{n}}}
+\newcommand{\sumin}{\ensuremath{\sum\limits_{i = 1}^{n}}}
+\newcommand{\suminm}{\ensuremath{\sum\limits_{i = 1}^{n-1}}}
+\newcommand{\sumjn}{\ensuremath{\sum\limits_{j = 1}^{n}}}
+\newcommand{\sumjpn}{\ensuremath{\sum\limits_{j = i+1}^{n}}}
+\newcommand{\sumkneq}{\ensuremath{\sum\limits_{i \neq k \neq j}^{n}}}
+\newcommand{\sumkn}{\ensuremath{\sum\limits_{k = 1}^{n}}}
+\newcommand{\sumijk}{\ensuremath{\sumin \sumjneqi \sumkneq}}
+% good ones:
+\newcommand{\sumpk}{\ensuremath{\sum\limits_{p_k\in\psetu}}}
+\newcommand{\sumpi}{\ensuremath{\sum\limits_{p_i\in\psetu}}}
+\newcommand{\sumpj}{\ensuremath{\sum\limits_{p_j\in\psetu}}}
+\newcommand{\sumki}{\ensuremath{\sum\limits_{k \in p_i}}}
+\newcommand{\sumkj}{\ensuremath{\sum\limits_{k \in p_j}}}
+\newcommand{\sump}{\ensuremath{\sum\limits_{p\in\pset}}}
+\newcommand{\sumpprime}{\ensuremath{\sum\limits_{p'\in\pset}}}
