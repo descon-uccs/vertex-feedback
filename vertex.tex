@@ -97,6 +97,8 @@
 \usepackage{cite}
 \usepackage[mathscr]{euscript}
 \usepackage{nameref}
+\usepackage{amsthm}
+
 \include{philipMacros}
 
 
@@ -200,7 +202,7 @@ We are going to show you something truly great.
 
 %\baselineskip=11.9pt
 
-Recent years have seen significant attention focused on deriving bounds on the cardinality of the minimum feedback vertex set for undirected graphs. For instance see bounds for planar graphs~\cite{planar}, etc~\cite{other}, and further conjectures~\cite{conj}.
+Recent years have seen considerable attention focused on deriving bounds on the cardinality of the minimum feedback vertex set for undirected graphs. For instance see bounds for planar graphs~\cite{planar}, etc~\cite{other}, and further conjectures~\cite{conj}.
 However, there seems to be a lack of such results for the valuable case of directed graphs.
 Accordingly, this note presents several simple upper bounds for this quantity for directed graphs as a function of the number of nodes and edges.
 
@@ -215,6 +217,28 @@ Then
 \sup_{G\in\gee}\alpha(G) = \left\lfloor\frac{|E|}{2}\right\rfloor.
 \end{equation}
 \end{theorem}
+
+\begin{proof}
+First we show the upper bound.
+Let $G\in\gee$ be a directed graph, and let $M(G)$ be a minimum feedback vertex set of $G$.
+We wish to show that 
+\begin{equation}
+2\alpha(G)\leq |E|.
+\end{equation}
+Enumerate the $m$ vertices in $M(G):=\{u_1,u_2,\ldots,u_m\}$.
+%Define $E(M(G)):=\{
+Define the sequence $\{G_i\}_{i=0}^m$ as follows: $G_0=G$, and $G_i$ is the digraph that results from the removal of $u_i$ and all incident edges from $G_{i-1}$.
+By the definition of $M(G)$, each vertex $u_i$ is contained in at least one cycle in graph $G_{i-1}$.
+Since each $u_i$ is contained in a cycle in $G_{i-1}$, it follows that at least 2 edges are incident on $u_i$ in $G_{i-1}$.
+Since the sequence of graphs satisfies $E(G_{i})\subset E(G_{i-1})$, this means that for all $i=1,\ldots,m$, at least 2 unique edges are incident on vertex $u_i$ which are \emph{not} incident on $u_j$ for any $j<i$.
+%
+Thus, writing $E(M(G))$ to denote the set of edges incident on $M(G)$, we have that
+\begin{equation}
+\alpha(G)\leq|E(M(G))|\leq |E(G)|.
+\end{equation}
+
+
+\end{proof}
 
 
 \bibliographystyle{ieeetr}
