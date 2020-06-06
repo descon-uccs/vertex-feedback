@@ -200,7 +200,21 @@ We are going to show you something truly great.
 
 %\baselineskip=11.9pt
 
-Recent years have seen significant attention focused on deriving bounds on the cardinality of 
+Recent years have seen significant attention focused on deriving bounds on the cardinality of the minimum feedback vertex set for undirected graphs. For instance see bounds for planar graphs~\cite{planar}, etc~\cite{other}, and further conjectures~\cite{conj}.
+However, there seems to be a lack of such results for the valuable case of directed graphs.
+Accordingly, this note presents several simple upper bounds for this quantity for directed graphs as a function of the number of nodes and edges.
+
+\section{Definitions}
+
+\section{Results}
+Our first result gives a tight upper bound for all directed (not necessarily connected) graphs as a function of the number of edges.
+\begin{theorem}\label{thm:main}
+Let $\gee$ be the set of all directed, not necessarily connected graphs.
+Then
+\begin{equation}\label{eq:main}
+\sup_{G\in\gee}\alpha(G) = \left\lfloor\frac{|E|}{2}\right\rfloor.
+\end{equation}
+\end{theorem}
 
 
 \bibliographystyle{ieeetr}
