@@ -202,6 +202,14 @@ We are going to show you something truly great.
 
 %\baselineskip=11.9pt
 
+
+Let $G=(V,E)$ be a directed, not necessarily connected graph.
+%A \emph{directed cycle} in $G$ is a sequence of distinct vertices $\{e_1,\dots,e_i\}\subseteq E$ such that 
+A subset of vertices $M(G)\subset V$ is called a \emph{minimum feedback vertex set} if the subgraph induced by the removal of $M(G)$ from $G$ contains no directed cycles.
+The problem of finding a minimum feedback vertex set in an arbitrary graph is known to be NP-hard even in sparse graphs~\cite{nphard}; in fact, its decision version was one of Karp's original 21 NP-complete problems~\cite{Karp1972}.
+Nonetheless, identifying minimum feedback vertex sets in directed graphs has applications in a number of disparate domains, including sizing distillation columns in chemical engineering~\cite{chemE}, deadlock recovery in operating systems and computer engineering~\cite{OS,cmpe}, and determining the inefficiency of Nash equilibria in game theory~\cite{Brown2019c}.
+
+
 Recent years have seen considerable attention focused on deriving bounds on the cardinality of the minimum feedback vertex set for undirected graphs. For instance see bounds for planar graphs~\cite{planar}, etc~\cite{other}, and further conjectures~\cite{conj}.
 However, there seems to be a lack of such results for the valuable case of directed graphs.
 Accordingly, this note presents several simple upper bounds for this quantity for directed graphs as a function of the number of nodes and edges.
@@ -211,10 +219,10 @@ Accordingly, this note presents several simple upper bounds for this quantity fo
 \section{Results}
 Our first result gives a tight upper bound for all directed (not necessarily connected) graphs as a function of the number of edges.
 \begin{theorem}\label{thm:main}
-Let $\gee$ be the set of all directed, not necessarily connected graphs.
+Let $G$ be a directed graph with edge set $E$.
 Then
 \begin{equation}\label{eq:main}
-\sup_{G\in\gee}\alpha(G) = \left\lfloor\frac{|E|}{2}\right\rfloor.
+\alpha(G) \leq \left\lfloor\frac{|E|}{2}\right\rfloor.
 \end{equation}
 \end{theorem}
 
