@@ -238,12 +238,16 @@ Thus, writing $E(M(G))$ to denote the set of edges incident on $M(G)$, we have t
 \end{equation}
 
 To show the lower bound, we construct a family of graphs which satisfy~\eqref{eq:main} with equality for all $k$, where $|E|=k$.
-
-
-
-
+Let $|V|=2\lfloor k/2\rfloor$, and let $E=\{(2i,2i-1)\cup(2i-1,2i)\ |\ i\in\{1,\ldots,|V|/2\}\}$ (see Figure~\ref{fig:graph}).
+If $|E|$ is odd, define the single remaining edge between any feasible pair of vertices (e.g., $(1,3)$).
+Since this graph contains exactly $|V|/2$ disjoint length-2 directed cycles, the cardinality of any minimum feedback vertex set is exactly $|V|/2$ (e.g., the set of odd-numbered vertices is such a set).
+%
 \end{proof}
 
+\begin{figure}
+%\includegraphics{gfx/graph}
+\caption{\label{fig:graph} Graph which achieves the bound given in Theorem~\ref{thm:main}.}
+\end{figure}
 
 \bibliographystyle{ieeetr}
 \bibliography{../../library/library}
