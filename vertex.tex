@@ -206,11 +206,11 @@ We are going to show you something truly great.
 Let $G=(V,E)$ be a directed, not necessarily connected graph.
 %A \emph{directed cycle} in $G$ is a sequence of distinct vertices $\{e_1,\dots,e_i\}\subseteq E$ such that 
 A subset of vertices $M(G)\subset V$ is called a \emph{minimum feedback vertex set} if the subgraph induced by the removal of $M(G)$ from $G$ contains no directed cycles.
-The problem of finding a minimum feedback vertex set in an arbitrary graph is known to be NP-hard even in sparse graphs~\cite{nphard}; in fact, its decision version was one of Karp's original 21 NP-complete problems~\cite{Karp1972}.
-Nonetheless, identifying minimum feedback vertex sets in directed graphs has applications in a number of disparate domains, including sizing distillation columns in chemical engineering~\cite{chemE}, deadlock recovery in operating systems and computer engineering~\cite{OS,cmpe}, and determining the inefficiency of Nash equilibria in game theory~\cite{Brown2019c}.
+The problem of finding a minimum feedback vertex set in an arbitrary graph is known to be NP-hard even in sparse graphs~\cite{Fomin2006,Borradaile2019} and its decision version was one of Karp's original 21 NP-complete problems~\cite{Karp1972}.
+Nonetheless, identifying minimum feedback vertex sets in directed graphs has applications in a number of disparate domains, including deadlock recovery in operating systems and computer engineering~\cite{OS,Lin2000}, and determining the inefficiency of Nash equilibria in game theory~\cite{Brown2019c}.
 
 
-Recent years have seen considerable attention focused on deriving bounds on the cardinality of the minimum feedback vertex set for undirected graphs. For instance see bounds for planar graphs~\cite{planar}, etc~\cite{other}, and further conjectures~\cite{conj}.
+Recent years have seen considerable attention focused on deriving bounds on the cardinality of the minimum feedback vertex set for undirected graphs. For instance see bounds for planar graphs~\cite{Kelly2017}, hypercubes~\cite{Madelaine2008}, shuffles~\cite{Kralovic2003}, and further conjectures~\cite{Kowalik2010}.
 However, there seems to be a lack of such results for the valuable case of directed graphs.
 Accordingly, this note presents several simple upper bounds for this quantity for directed graphs as a function of the number of nodes and edges.
 
