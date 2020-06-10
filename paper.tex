@@ -148,11 +148,11 @@ Recent years have seen considerable attention focused on deriving bounds on the 
 However, there seems to be a lack of similar results for the valuable case of directed graphs.
 Accordingly, this note presents a simple upper bound for this quantity for directed graphs as a function of the number of nodes and edges.
 We present graphs that achieve this bound.
-This bound can almost certainly be improved on specific classes of graphs, and we invite improvements from the mathematical community.
+While tight in general, this bound can almost certainly be improved on specific classes of graphs, and we invite improvements from the mathematical community.
 
 \section{Preliminaries}
-To ensure our results are clear, we present the following definitions.
-A directed graph $G=(V,E)$ (or \emph{digraph}) is specified by vertex set $V$ and edge set $E$; we do not allow repeated edges or self-loops.
+We present the following definitions to ensure our results are clear.
+A directed graph $G=(V,E)$ (or \emph{digraph}) is specified by vertex set $V$ and edge set $E$ and we assume that $G$ is simple (i.e., we forbid repeated edges or self-loops), but we do not require that $G$ is connected.
 A \emph{directed cycle} is a sequence of distinct edges $\{e_1,e_2,\ldots,e_m\}$ and a corresponding sequence of distinct vertices $\{v_1,v_2,\ldots,v_m\}$ such that for all $i<m$, $e_i=(v_i,v_{i+1})$ and $e_m=(v_m,v_1)$.
 Note that a directed cycle can have length 2; i.e., the graph $(\{v_1,v_2\},\{(v_1,v_2),(v_2,v_1)\})$ has a directed cycle.
 A digraph $G$ is called \emph{acyclic} if if it contains no directed cycles.
@@ -189,20 +189,20 @@ Since the sequence of graphs satisfies $E(G_{i})\subset E(G_{i-1})$, this means 
 %
 Thus, writing $E(M(G))$ to denote the set of edges incident on $M(G)$, we have that
 \begin{equation}
-\alpha(G)\leq|E(M(G))|\leq |E(G)|.
+2\alpha(G)\leq|E(M(G))|\leq |E|.
 \end{equation}
+
+\begin{figure}[b]
+\centering
+\includegraphics[width=.5\textwidth]{gfx/graph}
+\caption{\label{fig:graph} Graph with $\alpha(G)=\lfloor|E|/2\rfloor$, achieving the bound given in Theorem~\ref{thm:main} in~\eqref{eq:main}.}
+\end{figure}
 
 To show the edge-based lower bound, we construct a family of graphs which satisfy~\eqref{eq:main} with equality for all $k$, where $|E|=k$.
 Let $|V|=2\lfloor k/2\rfloor$, and let $E=\{(2i,2i-1)\cup(2i-1,2i)\ |\ i\in\{1,\ldots,|V|/2\}\}$ (see Figure~\ref{fig:graph}).
 If $|E|$ is odd, define the single remaining edge between any feasible pair of vertices (e.g., $(1,3)$).
 Since this graph contains exactly $|V|/2$ disjoint length-2 directed cycles, the cardinality of any minimum feedback vertex set is exactly $|V|/2$ (e.g., the set of odd-numbered vertices is such a set).
 %
-
-\begin{figure}
-\centering
-\includegraphics[width=.5\textwidth]{gfx/graph}
-\caption{\label{fig:graph} Graph which achieves the bound given in Theorem~\ref{thm:main}.}
-\end{figure}
 
 
 The vertex-based upper bound is trivial, since if $|V|-1$ vertices and associated edges are removed from any graph, the resulting graph is a single vertex and thus acyclic.
