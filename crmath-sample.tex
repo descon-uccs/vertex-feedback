@@ -52,7 +52,7 @@
 %% Authors, addresses and supports.
 %% The optional argument is for shortened version appearing in the headings. Please
 %% distinguish between first, middle and last names with the appropriate commands.
-\author{\firstname{Philip} N. \lastname{Brown}\CDRorcid{0000-xxx-0000-yyyy}}
+\author{\firstname{Philip} \middlename{N.} \lastname{Brown}\CDRorcid{0000-0003-3953-0503}}
 \address{University of Colorado Colorado Springs\\
 1420 Austin Bluffs Parkway\\
 CO Springs, CO 80918 USA}
@@ -94,11 +94,11 @@ CO Springs, CO 80918 USA}
 
 
 %% Keywords
-\keywords{Example, Optimization, Journal}
+\keywords{Directed Graphs, Minimum Feedback Vertex Set}
 
 
 %% Mathematical classification (2010)
-\subjclass{00X99}
+\subjclass{05C69}
 
 %% Abstract should be placed before \maketitle (and, in fact, before
 %% \begin{document is best)
@@ -145,7 +145,7 @@ Nonetheless, identifying minimum feedback vertex sets in directed graphs has app
 
 
 Recent years have seen considerable attention focused on deriving bounds on the cardinality of the minimum feedback vertex set for undirected graphs. For instance see bounds for planar graphs~\cite{Kelly2017}, hypercubes~\cite{Madelaine2008}, shuffles~\cite{Kralovic2003}, and further conjectures~\cite{Kowalik2010}.
-However, there seems to be a lack of such results for the valuable case of directed graphs.
+However, there seems to be a lack of similar results for the valuable case of directed graphs.
 Accordingly, this note presents a simple upper bound for this quantity for directed graphs as a function of the number of nodes and edges.
 We present graphs that achieve this bound.
 This bound can almost certainly be improved on specific classes of graphs, and we invite improvements from the mathematical community.
@@ -175,7 +175,7 @@ There exist graphs which achieve this bound.
 
 \begin{proof}
 First we show the edge-based upper bound.
-Let $G\in\gee$ be a directed graph, and let $M(G)$ be a minimum feedback vertex set of $G$.
+Let $G$ be a directed graph, and let $M(G)$ be a minimum feedback vertex set of $G$.
 We wish to show that 
 \begin{equation}
 2\alpha(G)\leq |E|.
@@ -217,7 +217,7 @@ The vertex-based lower bound is achieved by a complete digraph.
 \bibliographystyle{crplain}
 
 %This calls all references from the .bib
-\nocite{*}
+%\nocite{*}
 
 %  This inserts the bib file
 \bibliography{../../library/library}

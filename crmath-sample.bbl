@@ -1,0 +1,60 @@
+\def\bysame{\leavevmode ---------\thinspace}
+\makeatletter\if@francais\providecommand{\og}{<<~}\providecommand{\fg}{~>>}
+\else\gdef\og{``}\gdef\fg{''}\fi\makeatother
+\def\cdrandname{\&}
+\providecommand\cdrnumero{no.~}
+\providecommand{\cdredsname}{eds.}
+\providecommand{\cdredname}{ed.}
+\providecommand{\cdrchapname}{chap.}
+\providecommand{\cdrmastersthesisname}{Memoir}
+\providecommand{\cdrphdthesisname}{PhD Thesis}
+\begin{thebibliography}{1}
+
+\bibitem{Borradaile2019}
+G.~Borradaile, H.~Le, B.~Zheng, {\og {Engineering a PTAS for Minimum Feedback
+  Vertex Set in Planar Graphs}\fg}, in \emph{International Symposium on
+  Experimental Algorithms}, 2019, p.~98-113.
+
+\bibitem{Brown2019c}
+P.~N. Brown, J.~R. Marden, {\og {On the feasibility of local utility redesign
+  for multiagent optimization}\fg}, in \emph{18th European Control Conference},
+  2019, p.~3396-3401.
+
+\bibitem{Fomin2006}
+F.~V. Fomin, S.~Gaspers, A.~V. Pyatkin, {\og {Finding a minimum feedback vertex
+  set in time O(1.7548n)}\fg}, in \emph{International Workshop on Parameterized
+  and Exact Computation}, 2006, p.~184-191.
+
+\bibitem{Karp1972}
+R.~M. Karp, {\og {Reducibility among Combinatorial Problems}\fg}, in
+  \emph{Complexity of Computer Computations}, Plenum, New York, 1972,
+  p.~85-103.
+
+\bibitem{Kelly2017}
+T.~Kelly, C.~H. Liu, {\og {Minimum size of feedback vertex sets of planar
+  graphs of girth at least five}\fg}, \emph{European Journal of Combinatorics}
+  \textbf{61} (2017), p.~138-150.
+
+\bibitem{Kowalik2010}
+{\L}.~Kowalik, B.~Lu{\v{z}}ar, R.~{\v{S}}krekovski, {\og {An improved bound on
+  the largest induced forests for triangle-free planar graphs}\fg},
+  \emph{Discrete Mathematics and Theoretical Computer Science} \textbf{12}
+  (2010).
+
+\bibitem{Kralovic2003}
+R.~Kr{\'{a}}lovi{\v{c}}, P.~Ru{\v{z}}i{\v{c}}ka, {\og {Minimum feedback vertex
+  sets in shuffle-based interconnection networks}\fg}, \emph{Information
+  Processing Letters} \textbf{86} (2003), \cdrnumero 4, p.~191-196.
+
+\bibitem{Lin2000}
+H.~M. Lin, J.~Y. Jou, {\og {On computing the minimum feedback vertex set of a
+  directed graph by contraction operations}\fg}, \emph{IEEE Transactions on
+  Computer-Aided Design of Integrated Circuits and Systems} \textbf{19} (2000),
+  \cdrnumero 3, p.~295-307.
+
+\bibitem{Madelaine2008}
+F.~R. Madelaine, I.~A. Stewart, {\og {Improved upper and lower bounds on the
+  feedback vertex numbers of grids and butterflies}\fg}, \emph{Discrete
+  Mathematics} \textbf{308} (2008), \cdrnumero 18, p.~4144-4164.
+
+\end{thebibliography}
