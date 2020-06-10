@@ -13,48 +13,54 @@
 \bibitem{Borradaile2019}
 G.~Borradaile, H.~Le, B.~Zheng, {\og {Engineering a PTAS for Minimum Feedback
   Vertex Set in Planar Graphs}\fg}, in \emph{International Symposium on
-  Experimental Algorithms}, 2019, p.~98-113.
+  Experimental Algorithms}, 2019, p.~98-113,
+  \url{http://link.springer.com/10.1007/978-3-030-34029-2\_7}.
 
 \bibitem{Brown2019c}
 P.~N. Brown, J.~R. Marden, {\og {On the feasibility of local utility redesign
   for multiagent optimization}\fg}, in \emph{18th European Control Conference},
-  2019, p.~3396-3401.
+  2019, p.~3396-3401, \url{https://ieeexplore.ieee.org/document/8795902}.
 
 \bibitem{Fomin2006}
 F.~V. Fomin, S.~Gaspers, A.~V. Pyatkin, {\og {Finding a minimum feedback vertex
-  set in time O(1.7548n)}\fg}, in \emph{International Workshop on Parameterized
-  and Exact Computation}, 2006, p.~184-191.
+  set in time O(1.7548n)}\fg}, in \emph{International Workshop on
+  Parameterized and Exact Computation}, 2006, p.~184-191,
+  \url{https://link.springer.com/content/pdf/10.1007/11847250\_17.pdf}.
+
+\bibitem{Lin2000}
+{Hen-Ming Lin}, {Jing-Yang Jou}, {\og {On computing the minimum feedback vertex
+  set of a directed graph by contraction operations}\fg}, \emph{IEEE
+  Transactions on Computer-Aided Design of Integrated Circuits and Systems}
+  \textbf{19} (2000), \cdrnumero 3, p.~295-307,
+  \url{http://ieeexplore.ieee.org/document/833199/}.
 
 \bibitem{Karp1972}
 R.~M. Karp, {\og {Reducibility among Combinatorial Problems}\fg}, in
-  \emph{Complexity of Computer Computations}, Plenum, New York, 1972,
-  p.~85-103.
+  \emph{Complexity of Computer Computations}, Springer US, Boston, MA, 1972,
+  p.~85-103, \url{http://link.springer.com/10.1007/978-1-4684-2001-2\_9}.
 
 \bibitem{Kelly2017}
-T.~Kelly, C.~H. Liu, {\og {Minimum size of feedback vertex sets of planar
+T.~Kelly, C.-H. Liu, {\og {Minimum size of feedback vertex sets of planar
   graphs of girth at least five}\fg}, \emph{European Journal of Combinatorics}
-  \textbf{61} (2017), p.~138-150.
+  \textbf{61} (2017), p.~138-150,
+  \url{https://linkinghub.elsevier.com/retrieve/pii/S0195669816301032}.
 
 \bibitem{Kowalik2010}
 {\L}.~Kowalik, B.~Lu{\v{z}}ar, R.~{\v{S}}krekovski, {\og {An improved bound on
   the largest induced forests for triangle-free planar graphs}\fg},
   \emph{Discrete Mathematics and Theoretical Computer Science} \textbf{12}
-  (2010).
+  (2010), \cdrnumero 1, p.~87-100, \url{https://dmtcs.episciences.org/487}.
 
 \bibitem{Kralovic2003}
 R.~Kr{\'{a}}lovi{\v{c}}, P.~Ru{\v{z}}i{\v{c}}ka, {\og {Minimum feedback vertex
   sets in shuffle-based interconnection networks}\fg}, \emph{Information
-  Processing Letters} \textbf{86} (2003), \cdrnumero 4, p.~191-196.
-
-\bibitem{Lin2000}
-H.~M. Lin, J.~Y. Jou, {\og {On computing the minimum feedback vertex set of a
-  directed graph by contraction operations}\fg}, \emph{IEEE Transactions on
-  Computer-Aided Design of Integrated Circuits and Systems} \textbf{19} (2000),
-  \cdrnumero 3, p.~295-307.
+  Processing Letters} \textbf{86} (2003), \cdrnumero 4, p.~191-196,
+  \url{https://linkinghub.elsevier.com/retrieve/pii/S0020019002005045}.
 
 \bibitem{Madelaine2008}
 F.~R. Madelaine, I.~A. Stewart, {\og {Improved upper and lower bounds on the
   feedback vertex numbers of grids and butterflies}\fg}, \emph{Discrete
-  Mathematics} \textbf{308} (2008), \cdrnumero 18, p.~4144-4164.
+  Mathematics} \textbf{308} (2008), \cdrnumero 18, p.~4144-4164,
+  \url{https://linkinghub.elsevier.com/retrieve/pii/S0012365X07006267}.
 
 \end{thebibliography}
