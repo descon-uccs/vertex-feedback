@@ -20,7 +20,7 @@
 %% Abridged version in the other language as a first unnumbered
 %% section (see below).
 
-\documentclass[CRMATH,Unicode,manuscript]{cedram}
+\documentclass[onecolumn]{IEEETran}
 
 %% Authors may use other style files (e.g. to create figures), as long as
 %% they do not alter the layout of the article.
@@ -42,24 +42,32 @@
 \newcommand{\bbC}{\mathbb{C}}
 \newcommand{\bbZ}{\mathbb{Z}}
 
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{graphicx}
+
+
+\newtheorem{theorem}{Theorem}
+
+
+
 
 %% Title of the article. 
 %% The optional argument [] is the short version of the title (unused),
 %% and the mandatory argument {} the title itself
-\title{\vspace{-1cm}{\small Combinatorics, Graph Theory\ / Combinatoire, Th\'eorie des Graphes}\\
+\title{
 An Upper Bound on the Cardinality of a Minimum Feedback Vertex Set for Directed Graphs}
 
 
 %% Authors, addresses and supports.
 %% The optional argument is for shortened version appearing in the headings. Please
 %% distinguish between first, middle and last names with the appropriate commands.
-\author{\firstname{Philip} \middlename{N.} \lastname{Brown}\CDRorcid{0000-0003-3953-0503}}
-\address{University of Colorado Colorado Springs\\
-1420 Austin Bluffs Parkway\\
-CO Springs, CO 80918 USA}
+%\author{\firstname{Philip} \middlename{N.} \lastname{Brown}\CDRorcid{0000-0003-3953-0503}}
+%\thanks{University of Colorado Colorado Springs, CO 80918 USA}
 %% Support for the first author 
 % \thanks{}
-\email[P. Brown]{philip.brown@uccs.edu}
+%\email[P. Brown]{philip.brown@uccs.edu}
 %
 %% Each \address command increments a counter. If you want to refer to an address already
 %%  listed for a previous author, use the command below in lieu of \address. 
@@ -95,20 +103,12 @@ CO Springs, CO 80918 USA}
 
 
 %% Keywords
-\keywords{Directed Graphs, Minimum Feedback Vertex Set}
+%\keywords{Directed Graphs, Minimum Feedback Vertex Set}
 
 
-%% Mathematical classification (2010)
-\subjclass{05C69}
 
 %% Abstract should be placed before \maketitle (and, in fact, before
 %% \begin{document is best)
-\begin{abstract} 
-We derive an upper bound on the cardinality of a minimum feedback vertex set for arbitrary directed graphs, and provide example graphs which achieve this bound.
-\end{abstract}
-\begin{altabstract}
-Nous d\'erivons un majorant sur la cardinalit\'e d'une coupe-cycles de sommets de taille minimum pour des graphes orient\'es, et fournissons des exemples de graphes qui atteignent cette majorant.
-\end{altabstract}
 
 
 %% If the paper is in English, you may provide French metadata
@@ -121,6 +121,10 @@ Nous d\'erivons un majorant sur la cardinalit\'e d'une coupe-cycles de sommets d
 
 % Use the \maketitle command after the abstract
 \maketitle
+
+\begin{abstract} 
+We derive an upper bound on the cardinality of a minimum feedback vertex set for arbitrary directed graphs, and provide example graphs which achieve this bound.
+\end{abstract}
 
 
 %% Beginning of text
@@ -168,14 +172,14 @@ We write $\alpha(G)$ to denote the cardinality of a minimum feedback vertex set 
 
 
 Our main result gives a tight upper bound for all (not necessarily connected) digraphs as a function of the number of edges.
-\begin{theo}\label{thm:main}
+\begin{theorem}\label{thm:main}
 Let $G=(V,E)$ be a digraph.
 Then
 \begin{equation}\label{eq:main}
 \alpha(G) \leq \min\left\{|V|-1,\left\lfloor\frac{|E|}{2}\right\rfloor\right\}.
 \end{equation}
 There exist graphs which achieve this bound.
-\end{theo}
+\end{theorem}
 
 \begin{proof}
 First we show the edge-based upper bound.
@@ -218,7 +222,7 @@ The vertex-based lower bound is achieved by a complete digraph.
 
 % The next command determines the bibliography style. Please do not
 % change this.
-\bibliographystyle{crplain}
+\bibliographystyle{IEEETran}
 
 %This calls all references from the .bib
 %\nocite{*}
