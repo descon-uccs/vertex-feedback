@@ -78,7 +78,8 @@
 %% \ead{email address}
 %% \ead[url]{home page}
 %% \fntext[label2]{}
-%% \cortext[cor1]{}
+ \cortext[cor1]{Corresponding Author.}
+ \fntext[fn1]{This work was supported by National Science Foundation grant \#ECCS-2013779.}
 %% \address{Address\fnref{label3}}
 %% \fntext[label3]{}
 
@@ -89,7 +90,9 @@
 %% \address[label1]{}
 %% \address[label2]{}
 
-\author{Philip N. Brown}
+\author{Philip N. Brown\corref{cor1}%
+\fnref{fn1}}
+
 
 \address{Department of Computer Science\\ University of Colorado Colorado Springs\\ USA 80918}
 
@@ -179,7 +182,7 @@ Thus, writing $E(M(G))$ to denote the set of edges incident on $M(G)$, we have t
 \begin{figure}[h]
 \centering
 \includegraphics[width=.75\textwidth]{gfx/graph}
-\caption{\label{fig:graph} Graph with $\alpha(G)=\lfloor|E|/2\rfloor$, achieving the bound given in Theorem~\ref{thm:main} in~\eqref{eq:main} (Graphe avec $\alpha(G)=\lfloor|E|/2\rfloor$, qui atteignent le majorant de Theorem~\ref{thm:main}).}
+\caption{\label{fig:graph} Graph with $\alpha(G)=\lfloor|E|/2\rfloor$, achieving the bound given in Theorem~\ref{thm:main} in~\eqref{eq:main}.}
 \end{figure}
 
 To show the edge-based lower bound, we construct a family of graphs which satisfy~\eqref{eq:main} with equality for all $k$, where $|E|=k$.
