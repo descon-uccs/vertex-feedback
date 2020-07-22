@@ -1,149 +1,125 @@
-%% This is a Latex template file for articles submitted to
-%% Comptes Rendus. Mathématique.
-%% It uses the cedram.cls class file, which is available at
-%% http://www.centre-mersenne.org/texmf 
-%
-%%  The following template indicates the main features of the class file.
-%%  In order to avoid mistakes in the handling of metadata (name, title, etc.),
-%%  please use all the commands (and only those) indicated in the preamble for
-%%  the title and authors.
+%% 
+%% Copyright 2007-2019 Elsevier Ltd
+%% 
+%% This file is part of the 'Elsarticle Bundle'.
+%% ---------------------------------------------
+%% 
+%% It may be distributed under the conditions of the LaTeX Project Public
+%% License, either version 1.2 of this license or (at your option) any
+%% later version.  The latest version of this license is in
+%%    http://www.latex-project.org/lppl.txt
+%% and version 1.2 or later is part of all distributions of LaTeX
+%% version 1999/12/01 or later.
+%% 
+%% The list of all files belonging to the 'Elsarticle Bundle' is
+%% given in the file `manifest.txt'.
+%% 
 
-%% If your paper uses non-ascii characters, be aware that the class
-%% uses ISO-Latin-1 by default (inputenc is already loaded). You can
-%% opt for UTF-8 encoding using the Unicode documentclass option as
-%% below. In this case, you must add the following line at the top of 
-%% the  bibtex file 
-%-*-coding: utf-8
+%% Template article for Elsevier's document class `elsarticle'
+%% with numbered style bibliographic references
+%% SP 2008/03/01
+%%
+%% 
+%%
+%% $Id: elsarticle-template-num.tex 168 2019-02-25 07:15:41Z apu.v $
+%%
+%%
+\documentclass[preprint,12pt]{elsarticle}
 
-%% English is the default language. You may use the `francais' class
-%% option if the main language of your paper is French, you may provide an
-%% Abridged version in the other language as a first unnumbered
-%% section (see below).
+%% Use the option review to obtain double line spacing
+%% \documentclass[authoryear,preprint,review,12pt]{elsarticle}
 
-\documentclass[onecolumn]{IEEETran}
+%% Use the options 1p,twocolumn; 3p; 3p,twocolumn; 5p; or 5p,twocolumn
+%% for a journal layout:
+%% \documentclass[final,1p,times]{elsarticle}
+%% \documentclass[final,1p,times,twocolumn]{elsarticle}
+%% \documentclass[final,3p,times]{elsarticle}
+%% \documentclass[final,3p,times,twocolumn]{elsarticle}
+%% \documentclass[final,5p,times]{elsarticle}
+%% \documentclass[final,5p,times,twocolumn]{elsarticle}
 
-%% Authors may use other style files (e.g. to create figures), as long as
-%% they do not alter the layout of the article.
-% \usepackage[all]{xypic}
+%% For including figures, graphicx.sty has been loaded in
+%% elsarticle.cls. If you prefer to use the old commands
+%% please give \usepackage{epsfig}
 
-%% Notice that the class and the configuration file for this journal
-%% already load the following packages (don't load any conflicting
-%% package like enumerate for modifying lists, or changing fonts, e.g.!)
-%% enumerate, textcomp, amssymb, caption, graphicx, xcolor, array, 
-%% lastpage, etex, ifplatform, amsfonts, hyperref, placeins, fontenc
-%% (T1), fancyvrb.
-%% In addition, this journal's style  relies on the Fourier-GUT font
-%% that can be installed from CTAN. If you don't have them on your
-%% computer, the file will compile but the layout will be adjusted in
-%% production. 
-
-%% Insert here your own symbols, as the following ones:
-\newcommand{\bbR}{\mathbb{R}}
-\newcommand{\bbC}{\mathbb{C}}
-\newcommand{\bbZ}{\mathbb{Z}}
-
-\usepackage{amsmath}
+%% The amssymb package provides various useful mathematical symbols
 \usepackage{amssymb}
+\usepackage{amsmath}
+%% The amsthm package provides extended theorem environments
 \usepackage{amsthm}
-\usepackage{graphicx}
-
 
 \newtheorem{theorem}{Theorem}
 
 
+%% The lineno packages adds line numbers. Start line numbering with
+%% \begin{linenumbers}, end it with \end{linenumbers}. Or switch it on
+%% for the whole article with \linenumbers.
+%% \usepackage{lineno}
 
-
-%% Title of the article. 
-%% The optional argument [] is the short version of the title (unused),
-%% and the mandatory argument {} the title itself
-\title{
-An Upper Bound on the Cardinality of a Minimum Feedback Vertex Set for Directed Graphs}
-
-
-%% Authors, addresses and supports.
-%% The optional argument is for shortened version appearing in the headings. Please
-%% distinguish between first, middle and last names with the appropriate commands.
-%\author{\firstname{Philip} \middlename{N.} \lastname{Brown}\CDRorcid{0000-0003-3953-0503}}
-%\thanks{University of Colorado Colorado Springs, CO 80918 USA}
-%% Support for the first author 
-% \thanks{}
-%\email[P. Brown]{philip.brown@uccs.edu}
-%
-%% Each \address command increments a counter. If you want to refer to an address already
-%%  listed for a previous author, use the command below in lieu of \address. 
-%% The number is the appearance order of that address (among all addresses)
-% \addressSameAs{1}{<repeat address 1>}
-% This can be done multiple times
-%\addressSameAs{1}{Road to the 5th problem avenue, Germany}
-%\addressSameAs{2}{Center for experimental machines, United Kingdom}
-
-%% The grant number can be inserted in the database
-%% This won't be printed. It should be acknowledged in \thanks as above.
-% \CDRGrant[UKRC]{2019-$$55900}
-
-
-%% If you want to inform the reader of the paper about your
-%% supplementary material, you can refer to it this way. The file
-%% itself should be placed in a directory called Attach.
-
-%\ESM{Supplementary material for this article is supplied as a separate 
-%archive available from  the journal's
-%website under 
-%%% this will be replaced by the DOI of the article
-%article's URL 
-%%\printDOI\ 
-%or from the author.}
-
-%% If yo have supplementary material, you have to declare it this way (the
-%% file will be copied and linked on the website
-%% PDF is the default file type
-% \CDRsupplementaryTwotypes{supplementary-material}{\cdrattach{supplement-doc.pdf}}
-%% For another file type you should declare the mime-type
-% \CDRsupplementaryTwotypes[application/zip]{supplementary-material}{\cdrattach{mycode.zip}}
-
-
-%% Keywords
-%\keywords{Directed Graphs, Minimum Feedback Vertex Set}
-
-
-
-%% Abstract should be placed before \maketitle (and, in fact, before
-%% \begin{document is best)
-
-
-%% If the paper is in English, you may provide French metadata
-%% (alttitle, altabstract, altkeywords)
-%% If the paper is in French, you must provide English metadata
-%% (alttitle, altabstract, altkeywords)
+\journal{Discrete Mathematics}
 
 \begin{document}
 
+\begin{frontmatter}
 
-% Use the \maketitle command after the abstract
-\maketitle
+%% Title, authors and addresses
 
-\begin{abstract} 
+%% use the tnoteref command within \title for footnotes;
+%% use the tnotetext command for theassociated footnote;
+%% use the fnref command within \author or \address for footnotes;
+%% use the fntext command for theassociated footnote;
+%% use the corref command within \author for corresponding author footnotes;
+%% use the cortext command for theassociated footnote;
+%% use the ead command for the email address,
+%% and the form \ead[url] for the home page:
+%% \title{Title\tnoteref{label1}}
+%% \tnotetext[label1]{}
+%% \author{Name\corref{cor1}\fnref{label2}}
+%% \ead{email address}
+%% \ead[url]{home page}
+%% \fntext[label2]{}
+%% \cortext[cor1]{}
+%% \address{Address\fnref{label3}}
+%% \fntext[label3]{}
+
+\title{An Upper Bound on the Cardinality of a Minimum Feedback Vertex Set for Directed Graphs}
+
+%% use optional labels to link authors explicitly to addresses:
+%% \author[label1,label2]{}
+%% \address[label1]{}
+%% \address[label2]{}
+
+\author{Philip N. Brown}
+
+\address{Department of Computer Science\\ University of Colorado Colorado Springs\\ USA 80918}
+
+\begin{abstract}
 We derive an upper bound on the cardinality of a minimum feedback vertex set for arbitrary directed graphs, and provide example graphs which achieve this bound.
 \end{abstract}
 
 
-%% Beginning of text
-%% Abridged versions
-%% 1. English one if the paper is in French
-% \selectlanguage{english}
-% \section*{Abridged English version}
-% <your text here>
-% \selectlanguage{french}
-% to go back to main language.
+%%Research highlights
+%\begin{highlights}
+%\item Research highlight 1
+%\item Research highlight 2
+%\end{highlights}
 
-%%% 2. French one if the paper is in English
-% \selectlanguage{french}
-% \section*{Version française abrégée}
-%Nous serons brefs.
-%\selectlanguage{english}
-%%to go back to main language.
+\begin{keyword}
+Directed Graphs \sep Combinatorics \sep Feedback Vertex Sets
+%% keywords here, in the form: keyword \sep keyword
 
-% Example of section
+%% PACS codes here, in the form: \PACS code \sep code
+
+%% MSC codes here, in the form: \MSC code \sep code
+%% or \MSC[2008] code \sep code (2000 is the default)
+
+\end{keyword}
+
+\end{frontmatter}
+
+%% \linenumbers
+
+%% main text
 
 Let $G=(V,E)$ be a directed, not necessarily connected graph.
 %A \emph{directed cycle} in $G$ is a sequence of distinct vertices $\{e_1,\dots,e_i\}\subseteq E$ such that 
@@ -200,9 +176,9 @@ Thus, writing $E(M(G))$ to denote the set of edges incident on $M(G)$, we have t
 2\alpha(G)\leq|E(M(G))|\leq |E|.
 \end{equation}
 
-\begin{figure}[b]
+\begin{figure}[h]
 \centering
-\includegraphics[width=.5\textwidth]{gfx/graph}
+\includegraphics[width=.75\textwidth]{gfx/graph}
 \caption{\label{fig:graph} Graph with $\alpha(G)=\lfloor|E|/2\rfloor$, achieving the bound given in Theorem~\ref{thm:main} in~\eqref{eq:main} (Graphe avec $\alpha(G)=\lfloor|E|/2\rfloor$, qui atteignent le majorant de Theorem~\ref{thm:main}).}
 \end{figure}
 
@@ -219,26 +195,20 @@ The vertex-based lower bound is achieved by a complete digraph.
 
 
 
+%% The Appendices part is started with the command \appendix;
+%% appendix sections are then done as normal sections
+%% \appendix
 
-% The next command determines the bibliography style. Please do not
-% change this.
-\bibliographystyle{IEEETran}
+%% \section{}
+%% \label{}
 
-%This calls all references from the .bib
-%\nocite{*}
-
-%  This inserts the bib file
+%% If you have bibdatabase file and want bibtex to generate the
+%% bibitems, please use
+%%
+\bibliographystyle{elsarticle-num} 
 \bibliography{../../library/library}
 
-
 \end{document}
-
-
-
-
-
-
-
-
-
-
+\endinput
+%%
+%% End of file `elsarticle-template-num.tex'.
